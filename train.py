@@ -19,14 +19,14 @@ print("ML Model saved as chatbot.pkl")
 joblib.dump(cv,"model/vector.pkl")
 print("Vector model is saved as Vector.pkl")
 
-# import joblib
-# mnb = joblib.load('chatbot.pkl')
-# cv = joblib.load('vector.pkl')
-# print("Chatbot is started")
-# while True:
-#     user = input("User: ")
-#     if user.lower()=="exit":
-#         break
-#     user_vec = cv.transform([user])
-#     predict = mnb.predict(user_vec)[0]
-#     print(f"Bot: {predict}")
+import joblib
+mnb = joblib.load('model/chatbot.pkl')
+cv = joblib.load('model/vector.pkl')
+print("Chatbot is started")
+while True:
+    user = input("User: ")
+    if user.lower()=="exit":
+        break
+    user_vec = cv.transform([user])
+    predict = mnb.predict(user_vec)[0]
+    print(f"Bot: {predict}")

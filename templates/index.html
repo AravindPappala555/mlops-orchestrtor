@@ -1,0 +1,63 @@
+<!-- =====================
+UPDATED FUTURISTIC SPIDERMAN DARK THEME UI
+(Backend unchanged)
+===================== -->
+
+<!-- =====================
+index.html
+===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assam Brenden | MLOps Engineer</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<header>
+    <h1 class="glow">Assam Brenden</h1>
+    <p class="subtitle">MLOps Engineer @ Google | 8+ Years Experience</p>
+</header>
+
+<section class="card">
+    <h2>About Me</h2>
+    <p>I build futuristic AI systems, scalable ML pipelines, and autonomous deployment architectures.</p>
+</section>
+
+<section class="card">
+    <h2>Skills</h2>
+    <div class="chips">
+        <span>ML Systems</span>
+        <span>Kubernetes</span>
+        <span>CI/CD</span>
+        <span>GCP</span>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Projects</h2>
+    <p>Designed self-healing ML pipelines with real-time monitoring and retraining triggers.</p>
+</section>
+
+<!-- Spider Web Line -->
+<div class="web-line"></div>
+
+<!-- Spider Chatbot Icon -->
+<div id="chatbot-icon" onclick="toggleChat()">
+    🕷️
+</div>
+
+<!-- Chatbox -->
+<div id="chatbox">
+    <div id="messages"></div>
+    <input type="text" id="userInput" placeholder="Ask the Spider AI..." />
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
